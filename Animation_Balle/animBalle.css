@@ -1,0 +1,83 @@
+/* Créer l'animation d'une balle qui rebondit  dans un container*/
+
+
+
+body{
+    background-color:darkslateblue;
+}
+
+h1{
+    text-align: left;
+    background-color:yellow;
+}
+
+
+    
+
+.box1{
+    width:550px;
+    height: 550px;
+    border: 8px solid black;
+    margin-left:500px;
+}
+
+
+.box2{
+    width: 250px;
+    height: 400px;
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-left:500px;
+}
+
+
+
+
+
+#balle{
+    position: relative;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border:5px solid black;
+    animation: rebondi 3s linear forwards;
+    margin-left: 25px;
+}
+
+
+
+@keyframes rebondi{
+
+    from{
+        top:0px;
+    }
+    50%{
+        top:450px;
+    }
+    75%{
+        top: 300px;
+    }
+    87%{
+        top:450px;
+    }
+    94%{
+        top:400px;
+    }
+    to{
+        top:300px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

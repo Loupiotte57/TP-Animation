@@ -1,0 +1,93 @@
+
+body{
+  background-color: black;
+}
+
+h1{
+    text-align: center;
+    color:black;
+    background-color: cyan;
+}
+
+
+section {
+    background-color:darkslategray;
+    border: 5px solid cyan;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 30px auto;
+}
+
+.moving-carre {
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    background-color:yellow;
+    position: relative;
+    animation-duration: 5s, 2s, 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    text-align: center;
+    padding: -10px;
+    border: 3px  black;
+  }
+
+  #moving-carre {
+    position: absolute;
+    bottom: 0px;
+    animation-name: moving, rotation;
+    animation-delay: 0s;
+  }
+  #moving-carre2 {
+    position: absolute;
+    bottom: 0px;
+    animation-name: moving, rotation;
+    animation-delay: 1s;
+  }
+  #moving-carre3 {
+    position: absolute;
+    bottom: 0px;
+    animation-name: moving,  rotation;
+    animation-delay: 2s;
+  }
+  #moving-carre4 {
+    position: absolute;
+    bottom: 0px;
+    animation-name: moving, rotation;
+    animation-delay: 3s;
+  }
+
+
+@keyframes moving {
+    0% {
+      left :0px;
+      top: 0px;
+    }
+    40% {
+        left :0px;
+        top: 550px;
+      }
+    65% {
+      left :550px;
+      top: 550px;
+    }
+    85% {
+      left :550px;
+      top: 0px;
+    }
+    100% {
+      left :0px;
+      top: 0px;
+    }
+}
+
+
+@keyframes rotation {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
