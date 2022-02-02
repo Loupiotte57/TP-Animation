@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence de voyage Cosmos</title>
+
+    <link rel="stylesheet" href="cosmos.css">
+    <link reel="stylesheet" href=" https://www.behance.net/gallery/5411701/COCO-Free-Fashion-Typefamily">
+    
+</head>
+
+<body>
+    <!-- en-tête page -->
+    <nav>
+    <ul>
+        <li class="nom"><a href="default.html">Agence de voyage Cosmos</a></li>
+        <li style="float: right;margin: 10px;"><a href="#contact">Contact</a></li>
+        <li style="float: right;margin: 10px;"><a href="#espace">Planètes</a></li>
+        <li style="float: right;margin: 10px;"><a href="#presentation">Présentation</a></li>
+        
+    </ul>
+    <hr>
+    </nav>
+    <!--big image planète -->
+    <div class="conteneur">
+        <img class="planetes" src="https://up.gc-img.net/post_img/2017/12/jN9MciXFGRTR6X2_4U3Ni_32.jpeg" alt="photo planetes">
+        <p class="texte">Le Cosmos n'est plus réservé qu'à des équipages d'astraunotes.</p>
+
+    </div>
+
+    
+        <!-- article +texte + vidéo -->
+        <section>
+            <article>
+                
+                <h2 id="presentation"></h2>
+                <div id="article">
+                    <p id="texte_presentation">Nous existons depuis 1970 dans un cadre multinational</p>
+                    <p id="texte_presentation">Votre sécurité est notre priorité</p>
+                    <p id="texte_presentation">Notre agence regroupe l'ensemble des activités spatiales civiles ou militaires françaises</p>
+                    <p id="texte_presentation"> au sein de  ASE (ou ESA en anglais) qui coordonne le programme spatial européen.</p>
+                    <p id="texte_presentation">Notre mission est de concevoir et construire votre voyage sur mesure personnalisé</p>
+                     <p id="texte_presentation"> Vous avez envie de sensation extrême : assister à 16 levés de soleil par jour, sur la station Aurora.</p> 
+                     <p id="texte_presentation">Vous pourrez profiter d'une vue spectaculaire à travers un dôme de verre installé sur Dragon</p>
+                     <p id="texte_presentation">nous vous proposons des vols atmosphériques en apesanteur, des vols spatiaux orbitaux</p>    
+                </div>
+
+               <div id="image_article">   
+                <img id="video" src="./giphy.gif" alt="">
+            </div> 
+            </article>
+        </section>
+
+
+        <!-- section planéte -->
+        <section>
+            <h2 id="espace">Explorer l'espace </h2>
+            <article>
+            <!-- logo -->
+                <div id="planetes">
+                    
+                    <figure>
+                        <img id="imagePlanete" src="./imgs/uranus.jpg" alt="Arkonis">
+                        <figcaption>Arkonis</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img id="imagePlanete" src="./imgs/E.T.jfif" alt="E.T">
+                        <figcaption>Téléphone maison</figcaption>
+                    </figure>
+
+
+                    
+                    <figure>
+                        <img id="imagePlanete" src="./imgs/saturne.jpg "alt="Saturne">
+                        <figcaption>Saturne</figcaption>
+                    </figure>
+
+
+                    
+                    <figure>
+                        <img id="imagePlanete" src="./imgs/dragon.gif" alt="dragon">
+                        <figcaption>Dragon</figcaption>
+                    </figure>   
+                </div>
+            </article>
+        </section>
+
+
+    <!-- formulaire de contact -->
+         <section>
+            <h2 id="contact">Contact</h2>
+            <form action="./index.php" method="POST">
+            <fieldset>
+                <label for="Objet">Réservation</label>
+                <select id="Objet">
+                    <option>Nom de la planète</option>
+                    <option>Pays de départ</option>
+                    <option>Pays d'arrivée</option>
+                </select>
+            </fieldset>
+
+                <br />
+
+                <label for="maDate">Date &amp; Heure :</label>
+                <input type="date" name="maDate" id="maDate" />
+                <input type="time" name="monHeure">
+                <br />
+            </fieldset>
+
+            <fieldset>
+                <label for="maCiv">Civilité :</label>
+                <input type="radio" name="civ" id="maCiv">
+                <label for="maCiv">M</label>
+                <input type="radio" name="civ" id="mme">
+                <label for="mme">Mme</label>
+                <br>
+                <label for="prenom">Prénom : </label>
+                <input type="text" name="prenom" id="prenom">
+                <label for="nom">Nom : </label>
+                <input type="text" name="nom" id="nom">
+                <br />
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email" placeholder="exemple@exemple.fr">
+            </fieldset>
+
+            <fieldset>
+                <input type="number" name="" id="Numero" placeholder="N°">
+                <input type="text" name="" id="" placeholder="Rue">
+                <br>
+                <input type="number" name="" id="" placeholder="CP">
+                <input type="text" name="" id="" placeholder="Ville">
+            </fieldset>
+
+            <fieldset>
+                <h2>Commentaires</h2>
+                <textarea name="" id="" cols="70" rows="10" placeholder="Ecrivez ici"></textarea>
+            </fieldset>
+            <br>
+            <div class="button">
+                <input type="reset" value="Remise à zéro" />
+                <button type="submit">Envoyer le formulaire</button>
+            </div>
+        </form>
+        </section>
+
+    <footer>
+        
+            <p class="pfooter">Kareen &copy; 2022</p>
+    
+    </footer>
+
+    </body>
+    
+</html> 

@@ -1,0 +1,258 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+html{scroll-behavior:smooth;} 
+
+body{
+    text-align: center;
+}
+
+.nom{
+    padding-top: 10px;
+}
+   
+
+nav{
+    background: rgb(30,0,36);
+    background: midnightblue;
+    font-weight: bold; 
+    width: 100%;
+    display: flex;
+}   
+   
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Open Sans";
+    font-size: 20px;
+    width: 100%
+}
+
+
+li a {
+    float: left;
+}
+
+
+a{
+    font-size: 30px;
+}
+
+
+li a {
+    display: block;
+    color:white;
+    font-family: bold;
+    text-align: center;
+    padding: 16px;
+    text-decoration:none;
+}
+
+li a:hover {
+    color:yellow;     
+}
+
+
+article{
+    display: flex;
+    color:floralwhite;
+    font-weight: bold;
+    width: 100%;
+    height: 500px;
+    background-color:darkslateblue;
+    
+}
+
+
+#article{
+    width: 50%;
+    border: 0px  0px 0px 4px solid;
+    padding: 10px;
+}
+
+
+#image_article{
+    background-color:darkslateblue;
+    width: 50%;
+}
+
+
+img{
+    width: 100%;
+    padding-top: 5px;
+    
+}
+
+
+
+#texte_presentation{
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    font-family: 'Mukta', sans-serif;
+    word-spacing: 2px;
+}
+
+
+#video{
+    left:10px ;
+    padding-top: 25px;
+    width: 60%;   
+}
+
+
+#planetes{
+    border: 2px solid;
+    width: 100%;
+    display: flex; 
+    overflow: hidden;
+}
+
+
+#imagePlanete{
+    width: 256px;
+    height: 256px;
+    padding-top: 90px;
+    padding-right: 42px ;
+    transform: scale(1);   
+}
+
+
+/* Pour POSITIONNER UN TITRE AU-DESSUS DE MES IMAGES:
+ HTML autorise l'élément <figcaption> à être soit le premier, soit le dernier élément à l'inérieur de la figure et,
+ en l'absence de règle CSS modifiant ce comportement, la légende sera placée respectivement au dessus ou en dessous de la figure.
+
+Indépendamment des éléments, on peut également spécifier en CSS si la légende doit apparaître au dessus ou en dessous de l'image.
+ Pour cela, il faut indiquer au navigateur que la figure doit être formattée comme une table,
+ avec l'image comme unique cellule et la légende comme légende de la table.
+  J'ai trouvé la solution sur W3 CSS figures&légende*/
+
+
+figure {
+    display: table;
+  }
+  figcaption {
+    display: table-caption;
+    caption-side: top;
+    width: 256px;
+  }
+
+
+/* Pour agrandir mes images en un clic */
+#imagePlanete:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+
+}
+.texte{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+.container{
+    float: left;
+    
+}
+
+.map_agence{
+    width: 400px;
+    height: 400px;
+}
+
+.conteneur4{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.contact{
+    margin-right: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;     
+}
+
+
+fieldset{
+    background-color:darkslateblue; 
+}
+
+
+ option{
+    color:blue;
+    font-weight: bold;
+}
+
+
+label{
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+h2{
+    color: white;
+}
+
+
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: rgb(30,0,36);
+    background: darkslateblue;
+    font-weight: bold; 
+  
+}
+.pfooter{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+
+
+@media screen and (max-width:700px) {
+    nav{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    } 
+    li:nth-child(1) a:nth-child(1) {
+        font-size: 65px;
+        text-align: center;
+    }
+    li a:nth-child(1) {
+        font-size: 35px;
+        text-align: center;
+    }
+    #planetes{
+        flex-direction: column;
+        height: auto;
+        border: none;
+        width: auto;
+        overflow: hidden;
+    }
+    figure {
+        display: block;
+        height: auto;
+      }
+    h2 {
+        width: auto;
+    }
+    textarea {
+        width: 100%;
+    }
+}
+
+
+
+
+
